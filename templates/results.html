@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<meta charset="UTF-8">
+<h1 style="color: white;">{{ the_title }}</h1>
+<div class="results">
+    <table>
+        <tr><td>起点</td><td>{{ the_start_address }}</td></tr>
+        <tr><td>终点</td><td>{{ the_end_address }}</td></tr>
+    </table>
+    <p>本次行程距离为{{ the_total_walk }}米，预计花费约{{ the_total_walk_time }}分钟，具体指引如下：</p>
+    {{ the_html_table|safe }}
+</div>
+
+{% endblock %}

@@ -1,0 +1,74 @@
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="static/send.png" type="image/x-icon">
+
+    <title>{{ the_title }}</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="https://v3.bootcss.com/examples/signin/signin.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: linear-gradient(#00caff, #d5f8ff);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            margin-top:       5%;
+            margin-bottom:    5%;
+            margin-left:      10%;
+            margin-right:     10%;
+            padding: 0;
+        }
+        .container {
+            width: 100%;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 30px 30px 30px 30px;
+            padding: 30px 20px 30px 20px;
+            float: left;
+        }
+        h1 {
+            display: block;
+            margin-block-start: 0.67em;
+            margin-inline-start: 0px;
+            margin-inline-end: 0px;
+            font-weight: bold;
+            color: white;
+        }
+        p {
+            color: white;
+            margin-block-end: 1em;
+        }
+        .btn-primary{
+            background-color: #00c4ff;
+            border-color: #00c4ff;
+        }
+    </style>
+</head>
+
+  <body>
+<h1>{{ the_title }}</h1>
+<p>整合了高德 API 中的地理编码和步行路径规划功能，在下方输入结构化地址即可获得步行路径规划。</p>
+    <div class="container">
+      <form class="form-signin" method='POST' action='/search0'>
+
+
+        <input name='start_address' type='text' id="inputEmail" class="form-control" placeholder="起点地址" required="" autofocus="" style="border-bottom-right-radius: 0;border-bottom-left-radius: 0;">
+        <input name='end_address' type='text' id="inputEmail" class="form-control" placeholder="终点地址" required=""  style="border-radius: 0">
+        <input name='key' type="password" id="inputPassword" class="form-control" placeholder="密钥" required="" style="border-top-right-radius: 0;border-top-left-radius: 0;">
+
+        <button class="btn btn-lg btn-primary btn-block" type="submit">提交</button>
+      </form>
+
+    </div>
+
+</body>
+</html>
+

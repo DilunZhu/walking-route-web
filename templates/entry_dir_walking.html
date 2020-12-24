@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<meta charset="UTF-8">
+<h1 style="color: white;">{{ the_title }}</h1>
+<form method='POST' action='/search0'>
+    <table>
+        <p>请输入以下信息：</p>
+        <tr><td>起点地址</td><td><input name='start_address' type='text'></td></tr>
+        <tr><td>终点地址</td><td><input name='end_address' type='text'></td></tr>
+        <tr><td>密钥</td><td><input name='key' type='password' style="font-size: 115%;
+width: 30em;"></td></tr>
+    </table>
+    <p>信息确认无误后，请您点击这个按钮:</p>
+    <p><input value='提交' type='SUBMIT'></p>
+</form>
+
+{% endblock %}

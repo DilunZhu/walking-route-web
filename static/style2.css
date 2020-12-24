@@ -1,0 +1,92 @@
+body {
+  font-family:      Verdana, Geneva, Arial, sans-serif;
+  font-size:        medium;
+  /*background-color: tan;*/
+  background-image: linear-gradient(#00caff, #d5f8ff);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-top:       5%;
+  margin-bottom:    5%;
+  margin-left:      10%;
+  margin-right:     10%;
+  /*border: 1px solid black;*/
+  /*border-radius: 30px 30px 30px 30px;*/
+  /*padding:0px 20px 0px 20px;*/
+}
+form {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 30px 30px 30px 30px;
+  padding: 0px 20px 0px 20px;
+}
+.results {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 30px 30px 30px 30px;
+  padding: 30px 20px 30px 20px;
+}
+
+a {
+  text-decoration:  none; 
+  font-weight:      600; 
+}
+a:hover {
+  text-decoration:  underline;
+}
+a img {
+  border:           0;
+}
+h2 {
+  font-size:        150%;
+}
+table {
+  margin-left:      20px;
+  margin-right:     20px;
+  caption-side:     bottom;
+  border-collapse:  collapse;
+}
+td, th {
+  padding:          5px;
+  text-align:       left;
+}
+.copyright {
+  font-size:        75%;
+  font-style:       italic;
+}
+.slogan {
+  font-size:        75%;
+  font-style:       italic;
+}
+.confirmentry {
+  font-weight:      600; 
+}
+
+/*** Tables ***/
+
+table {
+font-size: 1em;
+background-color: #c7edff;
+border: 1px solid #84c0c9;
+color: #000000;
+padding: 5px 5px 2px;
+border-collapse: collapse;
+}
+
+td, th {
+border: thin solid #84c0c9;
+}
+
+/*** Inputs ***/
+input[type=text] {
+  font-size:        115%;
+  width:            30em;
+}
+input[type=submit] {
+  font-size:        125%;
+}
+select {
+  font-size:        125%;
+}
+
+
